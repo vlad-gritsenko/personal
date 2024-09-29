@@ -1,0 +1,144 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Hero Section */
+.hero {
+    background: #f4f4f4;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Main Section */
+.main-section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.main-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.main-section p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Testimonials Section */
+.testimonials {
+    background: #f9f9f9;
+    padding: 40px 0;
+}
+
+.testimonials h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.testimonial {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.testimonial p {
+    font-size: 1.1rem;
+    color: #444;
+}
+
+.testimonial h4 {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* FAQ Section */
+.faq {
+    padding: 40px 0;
+    background: #fff;
+}
+
+.faq h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-item h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.faq-item p {
+    color: #666;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+    .hero h1 {
+        font-size: 3.5rem;
+    }
+
+    .hero p {
+        font-size: 1.5rem;
+    }
+
+    .main-section h2, .testimonials h2, .faq h2 {
+        font-size: 2.5rem;
+    }
+
+    .testimonial {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .testimonial p {
+        max-width: 600px;
+        font-size: 1.2rem;
+    }
+
+    .faq-item {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .faq-item h4, .faq-item p {
+        max-width: 600px;
+    }
+}
