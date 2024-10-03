@@ -3,56 +3,170 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Landing Page</title>
-    <link rel="stylesheet" href="./styles.css" />
+    <meta name="description" content="Course landing page" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <title>Course Landing Page</title>
   </head>
   <body>
-    <!-- Header Section -->
-    <header>
-      <div class="container">
-        <p>4-денний курс</p>
-        <h1>Як вийти на дохід 5-10к$ працюючи в IT</h1>
-        <a href="#cta" class="cta-button">Хочу заробляти більше</a>
-      </div>
-    </header>
+    <!-- Hero Section -->
+    <section class="hero">
+      <small>Small header text</small>
+      <h1>Hero Headline</h1>
+      <p>Hero section description that gives an overview of the course</p>
+      <button class="cta-btn">Enroll Now</button>
+    </section>
 
-    <!-- About Section -->
-    <section id="about">
-      <div class="container">
-        <h2>Для кого цей курс?</h2>
-        <p>...</p>
+    <!-- Target Audience Section -->
+    <section class="audience">
+      <h1>For Whom is This Course</h1>
+      <div class="audience-block">
+        <span>😎</span>
+        <p>Description for target audience 1</p>
+      </div>
+      <div class="audience-block">
+        <span>😎</span>
+        <p>Description for target audience 2</p>
+      </div>
+      <div class="audience-block">
+        <span>😎</span>
+        <p>Description for target audience 3</p>
       </div>
     </section>
 
-    <!-- Features Section -->
-    <section id="features">
-      <div class="container">
-        <h2>Програма навчання</h2>
-        <div class="features-list">
-          <div class="feature-item">
-            <h3>Feature 1</h3>
-            <p>Brief description of feature 1.</p>
+    <!-- Author Section -->
+    <section class="author">
+      <div class="author-description">
+        <h1>About the Author</h1>
+        <ul>
+          <li>Bullet point about the author 1</li>
+          <li>Bullet point about the author 2</li>
+          <li>Bullet point about the author 3</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews">
+      <h1>What People Say</h1>
+      <div
+        class="main-carousel"
+        data-flickity='{ "cellAlign": "left", "contain": true, "wrapAround": true }'
+      >
+        <img src="img/image.jpeg" alt="Image 1" class="carousel-cell" />
+        <img src="img/image.jpeg" alt="Image 1" class="carousel-cell" />
+        <img src="img/image.jpeg" alt="Image 1" class="carousel-cell" />
+      </div>
+    </section>
+
+    <!-- Course Roadmap Section -->
+    <section class="roadmap">
+      <h1>Course Roadmap</h1>
+      <div class="step">
+        <span>Step 1</span>
+        <p>Description of step 1</p>
+      </div>
+      <div class="step">
+        <span>Step 2</span>
+        <p>Description of step 2</p>
+      </div>
+      <div class="step">
+        <span>Step 3</span>
+        <p>Description of step 3</p>
+      </div>
+    </section>
+
+    <!-- Discount Section -->
+    <section class="discount">
+      <div class="discount-text">
+        <h1>Limited Time Offer</h1>
+        <p>Get the course now with a discount</p>
+      </div>
+      <button class="cta-btn">Get Discount</button>
+      <p class="discount-end">До закінчення акції залишилось</p>
+      <div id="timer">
+        <div class="timer-block">
+          <span id="hours">00</span>
+          <span class="block-text">Години</span>
+        </div>
+        <div class="timer-block">
+          <span id="minutes">00</span>
+          <span class="block-text">Хвилини</span>
+        </div>
+        <div class="timer-block">
+          <span id="seconds">00</span>
+          <span class="block-text">Секунди</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+      <h1>Frequently Asked Questions</h1>
+      <div class="accordion-container">
+        <div class="accordion-item">
+          <button class="accordion-button">Question 1</button>
+          <div class="accordion-content">
+            <p>
+              Answer to question 1. This is a detailed explanation that expands
+              and collapses.
+            </p>
           </div>
-          <div class="feature-item">
-            <h3>Feature 2</h3>
-            <p>Brief description of feature 2.</p>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-button">Question 2</button>
+          <div class="accordion-content">
+            <p>
+              Answer to question 2. Here is more information regarding the
+              second question.
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-button">Question 3</button>
+          <div class="accordion-content">
+            <p>
+              Answer to question 3. This contains more content that the user can
+              read upon expansion.
+            </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- CTA Section -->
-    <section id="cta">
-      <div id="countdown-timer" />
-    </section>
-
-    <!-- Footer Section -->
+    <!-- Footer -->
     <footer>
-      <div class="container">
-        <p>&copy; 2024 Your Company. All rights reserved.</p>
-      </div>
+      <p>© 2024 by Author. All rights reserved.</p>
+      <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a>
     </footer>
+
+    <button class="sticky-cta">buy with discount</button>
+
+    <script>
+      const accordionButtons = document.querySelectorAll(".accordion-button");
+
+      accordionButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          const content = button.nextElementSibling;
+
+          // Toggle active class for button
+          button.classList.toggle("active");
+
+          // Show or hide the accordion content
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      });
+    </script>
+    <script src="./timer.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   </body>
-  <script>
-  </script>
 </html>
