@@ -9,83 +9,171 @@
       rel="stylesheet"
       href="https://unpkg.com/flickity@2/dist/flickity.min.css"
     />
-    <title>Course Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Як вийти на зарплату 5-10к$ IT спеціалісту</title>
   </head>
   <body>
     <!-- Hero Section -->
     <section class="hero">
-      <small>Small header text</small>
-      <h1>Hero Headline</h1>
-      <p>Hero section description that gives an overview of the course</p>
-      <button class="cta-btn">Enroll Now</button>
+      <span class="small">4-денний міні-курс</span>
+      <h1>Як вийти на зарплату <b>5-10к$</b> <br />IT спеціалісту</h1>
+      <ul>
+        <li>Зможеш вийти на <b>х2 зарплату</b></li>
+        <li>Отримаєш <b>гарантоване підвищення</b> на роботі</li>
+        <li>Дізнаєшся як <b>працювати менше</b>, а заробляти більше</li>
+      </ul>
+      <div class="price">
+        <span class="min-price">490грн</span>
+        <span class="max-price">3700грн</span>
+      </div>
+      <button class="cta-btn">Хочу заробляти більше</button>
+      <span class="up-price">До підвищення ціни:</span>
+      <div id="h-timer">
+        <div class="h-timer-block">
+          <span id="h-hours">00</span>
+          <span class="block-text">Години</span>
+        </div>
+        <div class="h-timer-block">
+          <span id="h-minutes">00</span>
+          <span class="block-text">Хвилини</span>
+        </div>
+        <div class="h-timer-block">
+          <span id="h-seconds">00</span>
+          <span class="block-text">Секунди</span>
+        </div>
+      </div>
     </section>
 
     <!-- Target Audience Section -->
     <section class="audience">
-      <h1>For Whom is This Course</h1>
-      <div class="audience-block">
-        <span>😎</span>
-        <p>Description for target audience 1</p>
-      </div>
-      <div class="audience-block">
-        <span>😎</span>
-        <p>Description for target audience 2</p>
-      </div>
-      <div class="audience-block">
-        <span>😎</span>
-        <p>Description for target audience 3</p>
+      <h1>Для кого цей курс?</h1>
+      <div class="audience-wrapper">
+        <div class="audience-block">
+          <span>😎</span>
+          <p>IT спеціалісти з досвідом, які хочуть <b>заробляти більше</b></p>
+        </div>
+        <div class="audience-block">
+          <span>💵</span>
+          <p>
+            Давно не отримували <b>підвищення</b> і не знають, як правильно це
+            зробити
+          </p>
+        </div>
+        <div class="audience-block">
+          <span>⌛️</span>
+          <p>
+            Хто хоче <b>менше працювати</b> та мати більше <b>вільного часу</b>
+          </p>
+        </div>
+        <div class="audience-block">
+          <span>🤓</span>
+          <p>
+            Новачки, які не знають, з чого почати та хочуть
+            <b>уникнути помилок</b>
+          </p>
+        </div>
       </div>
     </section>
 
     <!-- Author Section -->
     <section class="author">
       <div class="author-description">
-        <h1>About the Author</h1>
+        <h1>Автор курсу</h1>
+        <div class="img-wrapper"></div>
+        <p class="about-me">
+          Привіт, мене звати Владислав Гриценко, я Senior Software Engineer з 8+
+          річним досвідом в IT, який вийшов на <b>дохід 10к$</b>
+        </p>
         <ul>
-          <li>Bullet point about the author 1</li>
-          <li>Bullet point about the author 2</li>
-          <li>Bullet point about the author 3</li>
+          <li>
+            Я знаю, як стабільно підвищувати свою зп на 1.5-2х, бо робив це
+            далеко не один раз.
+          </li>
+          <li>
+            Виробив унікальні навички та техніки, яки дозволяють мені стабільно
+            отримувати підвищення.
+          </li>
+          <li>
+            Вийшов на комфортний мені рівень work/life balance, який дозволяє
+            вільно планувати свій день, не переробляючи та без вигорань.
+          </li>
         </ul>
       </div>
     </section>
 
     <!-- Reviews Section -->
     <section class="reviews">
-      <h1>What People Say</h1>
+      <h1>Відгуки учнів</h1>
       <div
         class="main-carousel"
         data-flickity='{ "cellAlign": "left", "contain": true, "wrapAround": true }'
       >
-        <img src="img/image.jpeg" alt="Image 1" class="carousel-cell" />
-        <img src="img/image.jpeg" alt="Image 1" class="carousel-cell" />
-        <img src="img/image.jpeg" alt="Image 1" class="carousel-cell" />
+        <img src="img/review1.jpg" alt="Image 1" class="carousel-cell" />
+        <img src="img/review2.png" alt="Image 1" class="carousel-cell" />
       </div>
     </section>
 
     <!-- Course Roadmap Section -->
     <section class="roadmap">
-      <h1>Course Roadmap</h1>
-      <div class="step">
-        <span>Step 1</span>
-        <p>Description of step 1</p>
-      </div>
-      <div class="step">
-        <span>Step 2</span>
-        <p>Description of step 2</p>
-      </div>
-      <div class="step">
-        <span>Step 3</span>
-        <p>Description of step 3</p>
+      <h1>Програма курсу</h1>
+      <div class="description">
+        <div class="step">
+          <span>1. Проблеми які перешкоджають вашому кар'єрному росту</span>
+          <p>
+            Поговоримо про те, з якими найчастішими проблемами стикаються
+            спеціалісти та чому їм не вдається заробляти стільки, скільки вони
+            хочуть
+          </p>
+        </div>
+        <span class="connector">👇</span>
+        <div class="step">
+          <span>2. CV & Linkedin</span>
+          <p>
+            Зрозумієш як створити CV, який ректурет не викине у смітник.
+            Заповниш профіль у Linkedin таким чином, щоб твій профіль виходив у
+            топ пошукових запросів, навчишся продавати себе через правильний
+            опис себе та свого досвіду.
+          </p>
+        </div>
+        <span class="connector">👇</span>
+        <div class="step">
+          <span>3. Спілкування з рекрутерами</span>
+          <p>
+            Більше 70% IT спеціалістів не знають та навіть не уявляють, про що
+            думають рекрутери, як з ними спілкуватися, що їм можна казати, а що
+            ні. Ти зрозумієш як вибудовувати діалог, щоб отримати бажаний офер.
+          </p>
+        </div>
+        <span class="connector">👇</span>
+        <div class="step">
+          <span>4. Техніки збільшення доходу на поточній роботі</span>
+          <p>
+            Дізнаєшся які є додаткові способи підвищення доходу. Я детально
+            розкажу як спілкуватися з менеджерами стосовно твого підвищення
+            таким чином, щоб гарантовано отримати його
+          </p>
+        </div>
       </div>
     </section>
 
     <!-- Discount Section -->
     <section class="discount">
       <div class="discount-text">
-        <h1>Limited Time Offer</h1>
-        <p>Get the course now with a discount</p>
+        <h1>
+          Приєднуйся до курсу <br />
+          за спеціальною пропозицією всього за
+        </h1>
+        <div class="price">
+          <span class="min-price">490грн</span>
+          <span class="max-price">3700грн</span>
+        </div>
       </div>
-      <button class="cta-btn">Get Discount</button>
+      <button class="cta-btn">Приєднатись</button>
       <p class="discount-end">До закінчення акції залишилось</p>
       <div id="timer">
         <div class="timer-block">
@@ -105,34 +193,41 @@
 
     <!-- FAQ Section -->
     <section class="faq">
-      <h1>Frequently Asked Questions</h1>
+      <h1>Запитання/відповіді</h1>
       <div class="accordion-container">
         <div class="accordion-item">
-          <button class="accordion-button">Question 1</button>
+          <button class="accordion-button">Як розпочати навчання?</button>
           <div class="accordion-content">
             <p>
-              Answer to question 1. This is a detailed explanation that expands
-              and collapses.
+              Після оплати участі ти отримаєш доступ до особистого
+              Telegram-боту, де тобі будуть почергово відкриватися відеоуроки та
+              додаткові матеріали. Заняття можна дивитися з телефону, планшета
+              або комп'ютера у зручний для тебе час.
             </p>
           </div>
         </div>
 
         <div class="accordion-item">
-          <button class="accordion-button">Question 2</button>
+          <button class="accordion-button">
+            Я тільки почав працювати в IT. Чи підійде мені курс?
+          </button>
           <div class="accordion-content">
             <p>
-              Answer to question 2. Here is more information regarding the
-              second question.
+              Так, звісно. Починаючи спеціалісти багато чого не знають, не
+              розуміють як та що робити, щоб рости в зарплаті, тому для них цей
+              курс ідельно підійде
             </p>
           </div>
         </div>
 
         <div class="accordion-item">
-          <button class="accordion-button">Question 3</button>
+          <button class="accordion-button">А якщо в мене не вийде?</button>
           <div class="accordion-content">
             <p>
-              Answer to question 3. This contains more content that the user can
-              read upon expansion.
+              Я даю всі необхідні навички та інструменти для того, щоб ви
+              розуміли, як вам підвищити свій дохід. З вашого боку залишається
+              діяти. Для тих кому буде щось не зрозуміло або будуть додаткові
+              питання в мене є особисті консультації.
             </p>
           </div>
         </div>
@@ -141,11 +236,13 @@
 
     <!-- Footer -->
     <footer>
-      <p>© 2024 by Author. All rights reserved.</p>
-      <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a>
+      <p>ФОП Гриценко Владислав Юрійович ІПН/ЄДРПОУ 3537206811</p>
+      <p>vld.gritsenko@gmail.com</p>
+      <a href="./policy.html">Політика конфіденційності</a> |
+      <a href="./oferta.html">Публічна оферта</a>
     </footer>
 
-    <button class="sticky-cta">buy with discount</button>
+    <button class="sticky-cta"><b>Придбати курс</b> (знижка <b>85%</b>)</button>
 
     <script>
       const accordionButtons = document.querySelectorAll(".accordion-button");

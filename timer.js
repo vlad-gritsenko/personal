@@ -2,6 +2,9 @@
 const countdownDuration = 3600; // Example: 1 hour (3600 seconds)
 
 function startCountdown() {
+  const heroHoursElement = document.getElementById("h-hours");
+  const heroMinutesElement = document.getElementById("h-minutes");
+  const heroSecondsElement = document.getElementById("h-seconds");
   const hoursElement = document.getElementById("hours");
   const minutesElement = document.getElementById("minutes");
   const secondsElement = document.getElementById("seconds");
@@ -31,6 +34,9 @@ function startCountdown() {
     const seconds = totalSecondsLeft % 60;
 
     // Update the HTML elements
+    heroHoursElement.textContent = pad(hours);
+    heroMinutesElement.textContent = pad(minutes);
+    heroSecondsElement.textContent = pad(seconds);
     hoursElement.textContent = pad(hours);
     minutesElement.textContent = pad(minutes);
     secondsElement.textContent = pad(seconds);
