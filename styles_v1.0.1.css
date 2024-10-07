@@ -126,13 +126,17 @@ h1 {
 }
 
 .cta-btn {
+  width: 80%;
+  margin: 20px auto 0 auto;
+  display: block;
+  text-decoration: none;
+  text-align: center;
   padding: 15px 25px;
   background-color: var(--accent);
   color: white;
   border: none;
   border-radius: 5px;
   font-size: 18px;
-  margin-top: 20px;
 }
 
 /* Audience section */
@@ -189,7 +193,7 @@ h1 {
   background-position: 50% 30%;
   background-size: 80%;
   background-repeat: no-repeat;
-  background-image: url('./img/author1.jpg');
+  background-image: url("./img/author1.jpg");
 }
 
 .author .about-me {
@@ -424,6 +428,10 @@ footer a {
 /* Sticky CTA */
 
 .sticky-cta {
+  display: inline-block;
+  text-align: center;
+  padding-top: 18px;
+  text-decoration: none;
   position: sticky;
   bottom: 0;
   width: 100%;
