@@ -20,6 +20,42 @@
       src="https://cdn.seline.so/seline.js"
       data-token="2b1fcd0d92af3b5"
     ></script>
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "907535378103878");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=907535378103878&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
     <title>Як вийти на зарплату 5-10к$ IT спеціалісту</title>
   </head>
   <body>
@@ -42,6 +78,7 @@
         href="https://app.zenedu.io/l/p/uKbPzmLBaByvMQQH"
         class="cta-btn"
         data-sln-event="cta: hero"
+        onclick="purchase()"
         >Хочу заробляти більше</a
       >
       <span class="up-price">До підвищення ціни:</span>
@@ -191,6 +228,7 @@
         href="https://app.zenedu.io/l/p/uKbPzmLBaByvMQQH"
         class="cta-btn"
         data-sln-event="cta: timer"
+        onclick="purchase()"
         >Приєднатись</a
       >
       <p class="discount-end">До закінчення акції залишилось</p>
@@ -267,9 +305,15 @@
       href="https://app.zenedu.io/l/p/uKbPzmLBaByvMQQH"
       class="sticky-cta"
       data-sln-event="cta: sticky"
+      onclick="purchase()"
       ><b>Придбати курс</b> (знижка <b>85%</b>)</a
     >
 
+    <script>
+      function purchase() {
+        fbq("track", "Purchase", { currency: "UAH", value: 490.0 });
+      }
+    </script>
     <script>
       const accordionButtons = document.querySelectorAll(".accordion-button");
 
