@@ -1,5 +1,5 @@
 // Set the countdown duration in seconds
-const countdownDuration = 3600; // Example: 1 hour (3600 seconds)
+const countdownDuration = 2640; // Example: 1 hour (3600 seconds)
 
 function startCountdown() {
   const heroHoursElement = document.getElementById("h-hours");
