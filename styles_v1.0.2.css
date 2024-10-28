@@ -135,7 +135,7 @@ h1 {
   background-color: var(--accent);
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 12px;
   font-size: 18px;
 }
 
